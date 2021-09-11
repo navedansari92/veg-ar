@@ -1,0 +1,322 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 53995,
+      "max": [
+        15.396188735961914,
+        11.142257690429688,
+        7.610348224639893
+      ],
+      "min": [
+        -12.963224411010742,
+        -11.689275741577148,
+        0.8905460238456726
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 647940,
+      "componentType": 5126,
+      "count": 53995,
+      "max": [
+        0.9999633431434631,
+        0.9999985098838806,
+        0.9999999403953552
+      ],
+      "min": [
+        -0.9999937415122986,
+        -0.999883770942688,
+        -0.9999859929084778
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 53995,
+      "max": [
+        0.9985008239746094,
+        0.9995115995407104
+      ],
+      "min": [
+        0.00048828125,
+        0.0014701081672683358
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 226473,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1295880,
+      "componentType": 5126,
+      "count": 38044,
+      "max": [
+        15.401402473449707,
+        11.086492538452148,
+        7.571918964385986
+      ],
+      "min": [
+        -12.950905799865723,
+        -11.694910049438477,
+        0.894307017326355
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1752408,
+      "componentType": 5126,
+      "count": 38044,
+      "max": [
+        0.9999982714653015,
+        0.9999985098838806,
+        0.9999980330467224
+      ],
+      "min": [
+        -0.9999998807907104,
+        -0.9999999403953552,
+        -0.9992865324020386
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 431960,
+      "componentType": 5126,
+      "count": 38044,
+      "max": [
+        1.9984002113342285,
+        0.9716795682907104
+      ],
+      "min": [
+        1.00048828125,
+        0.001467247144319117
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 905892,
+      "componentType": 5125,
+      "count": 162639,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Azad Balabanian (https://sketchfab.com/azadbal)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/abandoned-farm-house-with-hay-ddb95f4e9deb4baf8c1dca6a7957b128",
+      "title": "Abandoned Farm House With Hay"
+    },
+    "generator": "Sketchfab-11.16.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1556448,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 736312,
+      "byteOffset": 1556448,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2208936,
+      "byteOffset": 2292760,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 4501696,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_unlit"
+  ],
+  "images": [
+    {
+      "uri": "textures/Abandoned_Farm_House_with_Hay_u1_v1_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Abandoned_Farm_House_with_Hay_u2_v1_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "name": "Abandoned_Farm_House_with_Hay_u1_v1",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "name": "Abandoned_Farm_House_with_Hay_u2_v1",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Abandoned_Farm_House_with_Hay_Abandoned_Farm_House_with_Hay_u1_v1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Abandoned_Farm_House_with_Hay_Abandoned_Farm_House_with_Hay_u2_v1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        -1.0,
+        2.832769343193999e-16,
+        6.290011496532519e-32,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        -2.832769343193999e-16,
+        -1.0,
+        -2.220446049250313e-16,
+        0.0,
+        2.438241958618164,
+        -8.50087833404541,
+        -1.8875741711988714e-15,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Abandoned_Farm_House_with_Hay.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "name": "Abandoned_Farm_House_with_Hay"
+    },
+    {
+      "mesh": 0,
+      "name": "Abandoned_Farm_House_with_Hay_Abandoned_Farm_House_with_Hay_u1_v1_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Abandoned_Farm_House_with_Hay_Abandoned_Farm_House_with_Hay_u2_v1_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}

@@ -95,10 +95,10 @@
       </div>
       <div>
         <!-- <button class="say-hi-button" data-url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf">Potato</button> -->
-        <button class="say-hi-button" data-url="./assets/potato/scene.gltf">Potato</button>
+        <button class="say-hi-button" data-url="./assets/potato/scene.gltf">Cabbage</button>
       </div>
       <div>
-        <button class="say-hi-button" data-url="./assets/onion/scene.gltf">Onion</button>
+        <button class="say-hi-button" data-url="./assets/onion/scene.gltf">Tomato</button>
       </div>
     </div>
     <div id="play-ground">
@@ -124,15 +124,15 @@
         <a-asset-item id="exoFont" src="https://stemkoski.github.io/AR.js-examples/fonts/exoBlack.typeface.json"></a-asset-item>
         <img id="pixels" src="https://stemkoski.github.io/AR.js-examples/images/pixels.png" />
       </a-assets>
-
+      <!-- animation="delay:0; property: rotation; to: 0 0 0; loop: true; dur: 10000" -->
       <a-marker preset="hiro">
         <a-entity
           position="0 0 0"
           scale="0.15 0.15 0.15"
-          gltf-model=""
+          gltf-model="./assets/farm/scene.gltf"
           id="object-entity"
           rotation="0 0 0" 
-          animation="delay:0; property: rotation; to: 360 360 0; loop: true; dur: 10000"
+          
         > 
         </a-entity>
 
@@ -145,14 +145,15 @@
 
   <script>
     let data={
-      "organic-carrot":"2 ton \n X Rs 10/kg = \n 40000/ Acre",
-      "nonorganic-carrot":"1.5 ton \n X Rs 5/kg = \n 7500/ Acre",
-      "organic-potato":"3 ton \n X Rs 5/kg = \n 15000/ Acre",
-      "nonorganic-potato":"3 ton \n X Rs 10/kg = \n 30000/ Acre",
-      "organic-onion":"5 ton \n X Rs 5/kg = \n 25000/ Acre",
-      "nonorganic-onion":"5 ton \n X Rs 10/kg = \n 50000/ Acre"
+      "organic-carrot":"Area: 1 Acre\nQuantity: 2 ton \n Price: Rs.10/kg\nIncome: Rs.40000/-",
+      "nonorganic-carrot":"Area: 1 Acre\nQuantity: 1.5 ton \n Price: Rs.10/kg\nIncome: Rs.20000/-",
+      "organic-cabbage":"Area: 1 Acre\nQuantity: 2 ton \n Price: Rs.10/kg\nIncome: Rs.20000/-",
+      "nonorganic-cabbage":"Area: 1 Acre\nQuantity: 1.5 ton \n Price: Rs.10/kg\nIncome: Rs.10000/-",
+      "organic-tomato":"Area: 1 Acre\nQuantity: 2 ton \n Price: Rs.10/kg\nIncome: Rs.10000/-",
+      "nonorganic-tomato":"Area: 1 Acre\nQuantity: 1.5 ton \n Price: Rs.10/kg\nIncome: Rs.5000/-"
     }
     $(".say-hi-button").click(function(){
+       $("a-text").removeAttr("value");
       $("#object-entity").attr("gltf-model",$(this).attr("data-url"));
       console.log($("#type-org").attr("data-cat",$(this).text()));
       console.log($("#type-norg").attr("data-cat",$(this).text()));
@@ -179,6 +180,7 @@
       }else{
         alert("please select organic or nonorganic");
       }
+      $("a-text").removeAttr("value");
       $("a-marker").append('<a-text value="'+data[type+"-"+$(this).attr("data-cat").toLowerCase()]+'" size=".2" color="white" align="center" width="20" rotation="-90 0 0"></a-text>');
       // $("a-marker").append('<a-entity value="'+data[type+"-"+$(this).attr("data-cat").toLowerCase()]+'" align="center" color="white" height="10" background="color:black; transparent:false"></a-entity>');
       // $("a-marker").append('<a-entity text-geometry="value: '+data[type+"-"+$(this).attr("data-cat").toLowerCase()]+'; font: #exoFont; size:.2;" position="0 0 0" material="color: yellow; src: #pixels; repeat: 0.5 0.5;" rotation="-90 0 0"></a-entity>');
@@ -188,10 +190,10 @@
 
     function defaultSelection(){
      $("button").each(function(){
-        if($(this).text()=="Carrot"){
-          $(this).click();
+        //if($(this).text()=="Carrot"){
+          //$(this).click();
           $("#type-org").attr("checked","checked");
-        }
+        //}
       }) 
     }
     defaultSelection();

@@ -3,112 +3,119 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 486,
+      "count": 1666,
       "max": [
-        0.9180489778518677,
-        1.0116082429885864,
-        2.1030969619750977
+        0.081712834537029266,
+        0.096934229135513306,
+        0.12251041829586029
       ],
       "min": [
-        -0.9343722462654114,
-        -1.2008832693099976,
-        -0.010162591934204102
+        -0.087109729647636414,
+        -0.077937550842761993,
+        0.00044000687194056809
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 5832,
+      "byteOffset": 19992,
       "componentType": 5126,
-      "count": 486,
+      "count": 1666,
       "max": [
-        0.9967432022094727,
-        0.9956249594688416,
-        0.9993802309036255
+        0.9976840615272522,
+        0.99732553958892822,
+        0.99860209226608276
       ],
       "min": [
-        -0.998959481716156,
-        -0.993585467338562,
-        -0.9998849630355835
+        -0.99825942516326904,
+        -0.99835264682769775,
+        -0.99985945224761963
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 3,
       "componentType": 5126,
-      "count": 486,
+      "count": 1666,
       "max": [
-        0.999919056892395,
-        0.8031553626060486,
-        0.9998866319656372,
-        1.0
+        0.721779465675354,
+        0.99999749660491943,
+        0.55835980176925659,
+        1
       ],
       "min": [
-        -0.9996731281280518,
-        -0.8223763108253479,
-        -0.9997568726539612,
-        1.0
+        -0.9999961256980896,
+        -0.73179250955581665,
+        -0.59691596031188965,
+        1
       ],
       "type": "VEC4"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 486,
+      "count": 1666,
       "max": [
-        0.9959318041801453,
-        0.7390313148498535
+        0.98503959178924561,
+        0.99380552768707275
       ],
       "min": [
-        0.004068136215209961,
-        0.004068139009177685
+        0.0096626877784729004,
+        0.0056028664112091064
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 2304,
+      "count": 9216,
+      "max": [
+        1665
+      ],
+      "min": [
+        0
+      ],
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "Arthur.Zim (https://sketchfab.com/Arthur.Zim)",
+      "author": "Meerschaum Digital (https://sketchfab.com/meerschaumdigital)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/low-poly-potato-game-ready-e5184bb3bf2a455c8872e759bb97e13b",
-      "title": "Low Poly Potato Game Ready"
+      "source": "https://sketchfab.com/3d-models/cabbage-654306fc3ae344c7b9e7a9a40faca45b",
+      "title": "Cabbage"
     },
-    "generator": "Sketchfab-11.49.7",
+    "generator": "Sketchfab-10.30.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 9216,
+      "byteLength": 36864,
+      "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 3888,
-      "byteOffset": 9216,
+      "byteLength": 13328,
+      "byteOffset": 36864,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 11664,
-      "byteOffset": 13104,
+      "byteLength": 39984,
+      "byteOffset": 50192,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 7776,
-      "byteOffset": 24768,
+      "byteLength": 26656,
+      "byteOffset": 90176,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
@@ -116,44 +123,63 @@
   ],
   "buffers": [
     {
-      "byteLength": 32544,
+      "byteLength": 116832,
       "uri": "scene.bin"
     }
   ],
   "images": [
     {
-      "uri": "textures/potato_baseColor.png"
+      "uri": "textures/Material.001_baseColor.jpeg"
     },
     {
-      "uri": "textures/potato_metallicRoughness.png"
+      "uri": "textures/Material.001_metallicRoughness.png"
     },
     {
-      "uri": "textures/potato_normal.png"
+      "uri": "textures/Material.001_normal.jpeg"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "potato",
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Material.001",
       "normalTexture": {
-        "index": 2
+        "index": 2,
+        "scale": 1,
+        "texCoord": 0
       },
       "occlusionTexture": {
-        "index": 1
+        "index": 1,
+        "strength": 1,
+        "texCoord": 0
       },
       "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
         "baseColorTexture": {
-          "index": 0
+          "index": 0,
+          "texCoord": 0
         },
+        "metallicFactor": 0,
         "metallicRoughnessTexture": {
-          "index": 1
-        }
+          "index": 1,
+          "texCoord": 0
+        },
+        "roughnessFactor": 1
       }
     }
   ],
   "meshes": [
     {
-      "name": "potato_potato_0",
+      "name": "Cabbage_Material.001_0",
       "primitives": [
         {
           "attributes": {
@@ -174,83 +200,77 @@
       "children": [
         1
       ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        2.220446049250313e-16,
-        -1.0,
-        0.0,
-        0.0,
-        1.0,
-        2.220446049250313e-16,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "name": "Sketchfab_model"
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
     },
     {
       "children": [
         2
       ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0,
-        0.0,
-        0.0,
-        -1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "name": "b063e6f9a741454f8024fa20c215d177.fbx"
+      "name": "RootNode (model correction matrix)"
     },
     {
       "children": [
         3
       ],
-      "name": "RootNode"
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "17045910273d4516aa926e928622c437.fbx"
     },
     {
       "children": [
         4
       ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        -1.6292067939183141e-07,
-        -0.9999999999999868,
-        0.0,
-        0.0,
-        0.9999999999999868,
-        -1.6292067939183141e-07,
-        0.0,
-        0.0,
-        -1.1920928955078125e-07,
-        5.960464477539063e-08,
-        1.0
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
       ],
-      "name": "potato"
+      "matrix": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        -1.6292067939183141e-05,
+        -99.999999999998678,
+        0,
+        0,
+        99.999999999998678,
+        -1.6292067939183141e-05,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Cabbage"
     },
     {
       "mesh": 0,
-      "name": "potato_potato_0"
+      "name": "Cabbage_Material.001_0"
     }
   ],
   "samplers": [
@@ -264,7 +284,7 @@
   "scene": 0,
   "scenes": [
     {
-      "name": "Sketchfab_Scene",
+      "name": "OSG_Scene",
       "nodes": [
         0
       ]
@@ -285,3 +305,4 @@
     }
   ]
 }
+
